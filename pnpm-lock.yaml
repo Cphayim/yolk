@@ -8,7 +8,7 @@ importers:
       '@commitlint/cli': ^12.1.4
       '@commitlint/config-conventional': ^12.1.4
       '@ombro/eslint-config-typescript': ^0.1.2
-      '@ombro/tsconfig': ^1.4.2
+      '@ombro/tsconfig': ^2.0.0
       '@trivago/prettier-plugin-sort-imports': ^4.0.0
       '@vitest/coverage-c8': ^0.25.3
       '@vue/compiler-sfc': ^3.2.45
@@ -27,7 +27,7 @@ importers:
       '@commitlint/cli': 12.1.4
       '@commitlint/config-conventional': 12.1.4
       '@ombro/eslint-config-typescript': 0.1.2_x4fmxu3xk26jacyvrarq5vdbpq
-      '@ombro/tsconfig': 1.4.2
+      '@ombro/tsconfig': 2.0.0_typescript@4.9.3
       '@trivago/prettier-plugin-sort-imports': 4.0.0_7zqtgii6vqdecs66xtnni6wksu
       '@vitest/coverage-c8': 0.25.3
       '@vue/compiler-sfc': 3.2.45
@@ -874,9 +874,13 @@ packages:
       - supports-color
     dev: true
 
-  /@ombro/tsconfig/1.4.2:
-    resolution: {integrity: sha512-z5J/XIwDeZl8IQJ2hi5UyZN8znDClzpHYJvAVc1wH3ca0eA2klSdYj5ehyIhMvM2iRjFBRoSuz5BuYbV0VGGsg==}
-    engines: {node: ^14.13.1 || >=16.0.0}
+  /@ombro/tsconfig/2.0.0_typescript@4.9.3:
+    resolution: {integrity: sha512-9TGFhcJR6JoPDyc9qPhGKQVci3bnhrFhgIYpozJS/0pMv3d6TSGt4kGRNHpOP0mTicfMR495yBH/c0qwtNQdFw==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      typescript: ^5.0.0
+    dependencies:
+      typescript: 4.9.3
     dev: true
 
   /@trivago/prettier-plugin-sort-imports/4.0.0_7zqtgii6vqdecs66xtnni6wksu:
